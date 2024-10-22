@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter - Universul Magic</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1c1c1c;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #f4f4f4;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #4a1c1c;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1c1c1c;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .quote {
+            font-style: italic;
+            margin: 10px 0;
+        }
+        #feedback-form {
+            display: none;
+            margin-top: 20px;
+        }
+        .form-control {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .character {
+            flex: 1 1 30%;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Universul Harry Potter</h1>
+        <nav>
+            <a href="#despre">Despre</a>
+            <a href="#personaje">Personaje</a>
+            <a href="#cărți">Cărți</a>
+            <a href="#filme">Filme</a>
+            <a href="#curiozități">Curiozități</a>
+            <a href="#citate">Citate Celebre</a>
+            <a href="#feedback" onclick="toggleFeedbackForm()">Feedback</a>
+        </nav>
+    </header>
+
+    <section id="despre">
+        <h2>Despre Harry Potter</h2>
+        <p>Harry Potter este o serie de romane fantastice scrise de autoarea britanică J.K. Rowling. A început cu "Harry Potter și Piatra Filosofală", publicată în 1997, și s-a încheiat cu "Harry Potter și Talismanele Morții" în 2007. Această serie a fost tradusă în peste 80 de limbi și a vândut sute de milioane de exemplare în întreaga lume, făcând din Harry Potter un fenomen cultural global.</p>
+        <p>Seria urmărește aventurile lui Harry, un tânăr vrăjitor, și prietenii săi, Hermione Granger și Ron Weasley, în timp ce se confruntă cu forțele întunericului, reprezentate în principal de Lord Voldemort, un vrăjitor malefic care caută puterea absolută.</p>
+        <p>Impactul cultural al seriei este uriaș, inspirând o generație întreagă de cititori și fiind adaptată în filme, piese de teatru și parcuri de distracții. Harry Potter a devenit un simbol al imaginației și al puterii prieteniei.</p>
+    </section>
+
+    <section id="personaje">
+        <h2>Personaje principale</h2>
+        <div class="flex-container">
+            <div class="character">
+                <h3>Harry Potter</h3>
+                <p>Harry este protagonistul principal, cunoscut sub numele de "Băiatul care a trăit". El este un tânăr vrăjitor care descoperă adevărata sa identitate la vârsta de 11 ani și începe să învețe la Hogwarts.</p>
+            </div>
+            <div class="character">
+                <h3>Hermione Granger</h3>
+                <p>Hermione, cea mai bună prietenă a lui Harry, este extrem de inteligentă și dedicată studiului. Abilitățile sale magice și cunoștințele vastă sunt esențiale în aventurile lor.</p>
+            </div>
+            <div class="character">
+                <h3>Ron Weasley</h3>
+                <p>Ron este cel mai bun prieten al lui Harry, venit dintr-o familie numeroasă de vrăjitori. El aduce un umor savuros și o loialitate neclintită în grupul lor.</p>
+            </div>
+            <div class="character">
+                <h3>Albus Dumbledore</h3>
+                <p>Dumbledore, directorul Hogwarts, este mentorul lui Harry și o figură înțeleaptă în comunitatea vrăjitorilor. El joacă un rol crucial în pregătirea lui Harry pentru confruntarea cu Voldemort.</p>
+            </div>
+            <div class="character">
+                <h3>Lord Voldemort</h3>
+                <p>Antagonistul principal, Voldemort, este un vrăjitor malefic care caută puterea absolută și imortalitatea, punând în pericol întreaga lume vrăjitorească.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="cărți">
+        <h2>Cărți</h2>
+        <ol>
+            <li>
+                <strong>Harry Potter și Piatra Filosofală</strong>
+                <p>Harry descoperă că este vrăjitor și începe să învețe la Hogwarts. În această carte, el își face noi prieteni și află despre moștenirea sa misterioasă.</p>
+            </li>
+            <li>
+                <strong>Harry Potter și Camera Secretelor</strong>
+                <p>Harry și prietenii săi investighează atacurile misterioase asupra colegilor lor, care duc la descoperirea unei camere secrete în Hogwarts.</p>
+            </li>
+            <li>
+                <strong>Harry Potter și Prizonierul din Azkaban</strong>
+                <p>Harry află mai multe despre trecutul său și se confruntă cu amenințarea lui Sirius Black, un criminal evadat care pare să fie conectat la familia sa.</p>
+            </li>
+            <li>
+                <strong>Harry Potter și Patru Case</strong>
+                <p>Harry își continuă aventurile și se confruntă cu obstacolele din cadrul Turneului celor Trei Vrăjitori, unde se testează abilitățile și curajul său.</p>
+            </li>
+            <li>
+                <strong>Harry Potter și Ordinul Phoenix</strong>
+                <p>Harry se alătură unei organizații secrete numită Ordinul Phoenix pentru a lupta împotriva întunericului care revine, dar se confruntă și cu dificultăți la Hogwarts.</p>
+            </li>
+            <li>
+                <strong>Harry Potter și Prințul Semipur</strong>
+                <p>Harry descoperă secrete despre trecutul lui Voldemort și se pregătește pentru o confruntare finală, în timp ce își face noi aliați și descoperă trădări.</p>
+            </li>
+            <li>
+                <strong>Harry Potter și Talismanele Morții</strong>
+                <p>Harry, Ron și Hermione pornesc într-o misiune periculoasă pentru a distruge talismanele lui Voldemort, încercând să salveze lumea vrăjitorilor din fața întunericului.</p>
+            </li>
+        </ol>
+    </section>
+
+    <section id="filme">
+        <h2>Filme</h2>
+        <p>Seria de filme Harry Potter, bazată pe cărțile lui J.K. Rowling, a fost realizată de Warner Bros. și include opt filme care acoperă toate cele șapte cărți. Iată o listă cu filmele:</p>
+        <ul>
+            <li><strong>Harry Potter și Piatra Filosofală</strong>: Harry descoperă că este vrăjitor și intră în lumea magică, unde întâlnește prietenii și inamicii săi.</li>
+            <li><strong>Harry Potter și Camera Secretelor</strong>: Harry investighează atacuri misterioase și descoperă o cameră secretă plină de pericole.</li>
+            <li><strong>Harry Potter și Prizonierul din Azkaban</strong>: Harry descoperă mai multe despre trecutul său, în special despre Sirius Black și legătura sa cu familia Potter.</li>
+            <li><strong>Harry Potter și Patru Case</strong>: Harry participă la Turneul celor Trei Vrăjitori, confruntându-se cu provocări periculoase.</li>
+            <li><strong>Harry Potter și Ordinul Phoenix</strong>: Harry se alătură unei organizații secrete pentru a lupta împotriva revenirii lui Voldemort.</li>
+            <li><strong>Harry Potter și Prințul Semipur</strong>: Harry învață mai multe despre Voldemort și se pregătește pentru bătălia finală.</li>
+            <li><strong>Harry Potter și Talismanele Morții - Partea 1</strong>: Harry, Ron și Hermione caută talismanele lui Voldemort pentru a-l înfrunta.</li>
+            <li><strong>Harry Potter și Talismanele Morții - Partea 2</strong>: În acest ultim film, bătălia finală pentru Hogwarts are loc, iar soarta lumii magice este decisă.</li>
+        </ul>
+    </section>
+
+    <section id="curiozități">
+        <h2>Curiozități</h2>
+        <ul>
+            <li>Numărul 7 este considerat un număr magic în cărțile Harry Potter, având o semnificație specială în diverse culturi.</li>
+            <li>J.K. Rowling a conceput ideea cărților în timpul unei călătorii cu trenul de la Manchester la Londra, inspirându-se din diferite elemente ale vieții sale.</li>
+            <li>Seria a fost inițial respinsă de mai multe edituri înainte de a fi publicată, demonstrând perseverența autoarei.</li>
+            <li>Harry Potter a devenit un simbol al imaginației și al puterii prieteniei, inspirând milioane de cititori să creadă în magie.</li>
+            <li>Cărțile au câștigat numeroase premii și au fost adaptate în piese de teatru, jocuri video și parcuri de distracții, aducând universul Harry Potter mai aproape de fani.</li>
+        </ul>
+    </section>
+
+    <section id="citate">
+        <h2>Citate Celebre</h2>
+        <div class="quote">"Nu este bine să ne judecăm pe noi înșine după alegerile altora." - Albus Dumbledore</div>
+        <div class="quote">"Este foarte ușor să te lași îndemnat de laturile întunecate." - Albus Dumbledore</div>
+        <div class="quote">"Alegerea este ceea ce face un om." - Albus Dumbledore</div>
+        <div class="quote">"Fiecare alegere pe care o facem ne definește." - Harry Potter</div>
+        <div class="quote">"Ceea ce contează este ceea ce alegem să facem cu timpul care ne este dat." - Gandalf (în universul similar)</div>
+    </section>
+
+    <section id="feedback">
+        <h2>Feedback</h2>
+        <button onclick="toggleFeedbackForm()">Lasă un feedback</button>
+        <div id="feedback-form">
+            <input type="text" class="form-control" placeholder="Numele tău" id="name">
+            <textarea class="form-control" placeholder="Mesajul tău" id="message"></textarea>
+            <button onclick="submitFeedback()">Trimite</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Fanii Harry Potter</p>
+    </footer>
+
+    <script>
+        function toggleFeedbackForm() {
+            const form = document.getElementById('feedback-form');
+            form.style.display = form.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function submitFeedback() {
+            const name = document.getElementById('name').value;
+            const message = document.getElementById('message').value;
+            alert(`Mulțumim, ${name}! Mesajul tău a fost trimis: "${message}"`);
+            document.getElementById('name').value = '';
+            document.getElementById('message').value = '';
+            toggleFeedbackForm();
+        }
+    </script>
+
+</body>
+</html>
